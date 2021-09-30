@@ -1,19 +1,6 @@
 
-import emailjs from "emailjs-com";
-import  { useRef } from 'react';
 function Contact() {
-    const form = useRef();
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-    emailjs.sendForm('gmail', 'template_09traym', e.target, 'user_ck7NsaHkdxE1a1u7jJWnK')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+  
     
     
     return (
@@ -24,7 +11,7 @@ function Contact() {
             </div>
           
             <div className="text-center w-full">
-               <form ref={form} onSubmit={sendEmail}>
+               <form  onSubmit=()=>{}>
                <div className="mt-8">   
               <label className="uppercase text-sm text-gray-600 font-bold">Full Name</label>
               <input className="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
