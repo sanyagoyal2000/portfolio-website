@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
-import portfolios from '../data/projects';
+//import portfolios from '../data/projects';
 
 //import LargeCard from "../components/LargeCard";
 export default function Home({projectData}) {
@@ -34,10 +34,11 @@ export default function Home({projectData}) {
           
         </section>
         <section className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 ">
-
+        <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
         {projectData?.map((item)=>(
             <Projects key={item.img} img={item.image} title={item.title} text={item.text} link1={item.link1} link2={item.link2}/>
           ))}
+          </div>
       </section>
         <section className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 ">
 
@@ -55,7 +56,7 @@ export default function Home({projectData}) {
 export async function getStaticProps(){
   
   
-  const projectData=await fetch('/portfolios').then((res)=>res.json());
+  const projectData=await fetch('https://jsonkeeper.com/b/U9LO').then((res)=>res.json());
   return {
     props: {
       

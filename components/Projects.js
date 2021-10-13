@@ -1,10 +1,9 @@
-//import { useState } from 'react';
 
 
 
 function Projects({img,title,text,link1,link2}) {
    return(
-    <div className="rounded overflow-hidden shadow-lg">
+    <div className="rounded overflow-hidden shadow-lg hover:bg-gray-200">
     <img className="w-full" src={img} alt={title}/>
     <div className="px-6 py-4">
       <div className="font-bold text-xl mb-2">{title}</div>
