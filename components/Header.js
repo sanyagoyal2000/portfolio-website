@@ -30,11 +30,11 @@ function Header() {
            <div className="flex items-center justify-end space-x-4 text-gray-800 ">
            
               <ul className="flex text-white font-bold font-rubik uppercase space-x-6 ">
-                <li className="mr-2 hover:text-yellow-200"><a>Home</a></li>
-                <li className="mr-2 hover:text-yellow-200"><a>About</a></li>
-                <li className="mr-2 hover:text-yellow-200"><a>Projects</a></li>
-                <li className="mr-2 hover:text-yellow-200"><a>Resume</a></li>
-                <li className="mr-2 hover:text-yellow-200"><a>Contact</a></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><a>Home</a></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><a>About</a></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><a>Projects</a></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><a>Resume</a></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><a>Contact</a></li>
                 
               </ul>
            
