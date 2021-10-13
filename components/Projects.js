@@ -1,10 +1,27 @@
 
 import GitHub from '@material-ui/icons/GitHub';
 import Language from '@material-ui/icons/Language';
+import { motion } from "framer-motion"
 
+/*const divVariants={
+    hover:{
+        scale:1.1, 
+        
+        transition:{
+            yoyo:Infinity
+        }
+    }
+}*/
 function Projects({img,title,text,link1,link2}) {
    return(
-    <div className="rounded overflow-hidden bg-gray-50 shadow-lg hover:bg-gray-200 group transition-tansform-ease-out ">
+    <motion.div animate={{ rotate:5}}
+    transition={{
+      repeat: 1,
+      repeatType: "reverse",
+      duration: 2,
+      yoyo:Infinity
+    }}
+    className="rounded overflow-hidden bg-gray-50 shadow-lg hover:bg-gray-200 group transition-tansform-ease-out ">
     
     <img className="w-full" src={img} alt={title}/>
     <div className="hidden group-hover:block flex-row  pl-6 space-x-6  ">
@@ -25,7 +42,7 @@ function Projects({img,title,text,link1,link2}) {
       <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
    */}
       </div>
-  </div>
+  </motion.div>
    )
 }
 
