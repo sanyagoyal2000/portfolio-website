@@ -5,7 +5,9 @@ import Footer from "../components/Footer";
 import About from "../components/About";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
-//import portfolios from '../data/projects';
+import Resume from "../components/Resume";
+
+
 
 //import LargeCard from "../components/LargeCard";
 export default function Home({projectData}) {
@@ -34,18 +36,35 @@ export default function Home({projectData}) {
           
         </section>
         <section className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 ">
+          <div className="flex">
+        <h2 className="text-3xl font-semibold pb-5 font-inter pt-4 pl-4 ">Projects</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 mt-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+</svg></div>
         <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
+        
+        
         {projectData?.map((item)=>(
             <Projects key={item.img} img={item.image} title={item.title} text={item.text} link1={item.link1} link2={item.link2}/>
           ))}
           </div>
       </section>
+      <section className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 ">
+      <div className="flex">
+        <h2 className="text-3xl font-semibold pb-5 font-inter pt-4 pl-4 ">Resume</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mt-6 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+</svg></div>
+        <Resume className="items-center"/>
+
+      </section>
+      <br/><br/>
         <section className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 ">
 
-      {/*<Projects/>*/}
+     
       
       <Contact/></section>
-      {/*<LargeCard/>*/}
+     
       <br/><br/>
       <Footer/>
 
