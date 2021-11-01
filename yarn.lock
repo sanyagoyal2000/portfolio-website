@@ -3535,6 +3535,11 @@
   "resolved" "https://registry.npmjs.org/lodash.sortby/-/lodash.sortby-4.7.0.tgz"
   "version" "4.7.0"
 
+"lodash.throttle@^4.1.1":
+  "integrity" "sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
+
 "lodash.topath@^4.5.2":
   "integrity" "sha1-NhY1Hzu6YZlKCTGYlmC9AyVP0Ak="
   "resolved" "https://registry.npmjs.org/lodash.topath/-/lodash.topath-4.5.2.tgz"
@@ -4827,7 +4832,7 @@
     "copy-to-clipboard" "^3"
     "prop-types" "^15.5.8"
 
-"react-dom@^16 || ^17 || ^18", "react-dom@^16.3.0 || ^17.0.0-0", "react-dom@^16.6.0 || ^17", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^16.9.0 || ^17", "react-dom@^17.0.2", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@>=16.8 || ^17.0.0", "react-dom@>=16.8.0", "react-dom@17.0.2", "react-dom@17.x":
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0", "react-dom@^16 || ^17 || ^18", "react-dom@^16.3.0 || ^17.0.0-0", "react-dom@^16.6.0 || ^17", "react-dom@^16.8.0 || ^17.0.0", "react-dom@^16.9.0 || ^17", "react-dom@^17.0.2", "react-dom@>=16.6.0", "react-dom@>=16.8", "react-dom@>=16.8 || ^17.0.0", "react-dom@>=16.8.0", "react-dom@17.0.2", "react-dom@17.x":
   "integrity" "sha512-s4h96KtLDUQlsENhMn1ar8t2bEa+q/YAtj8pPPdIjPDGBDIVNsrD9aXNWqspUe6AzKCIG0C1HZZLqLV7qpOBGA=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-17.0.2.tgz"
   "version" "17.0.2"
@@ -4880,6 +4885,14 @@
   "resolved" "https://registry.npmjs.org/react-refresh/-/react-refresh-0.8.3.tgz"
   "version" "0.8.3"
 
+"react-scroll@^1.8.4":
+  "integrity" "sha512-J9rFqmdzularCXJoK2vleHVg2//y9Fs6zh7K13x7Yz3Y1kHPfQ/TTq029L09q1Gr5/5JjFLBOB2Sa3yYIqyTyQ=="
+  "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.4.tgz"
+  "version" "1.8.4"
+  dependencies:
+    "lodash.throttle" "^4.1.1"
+    "prop-types" "^15.7.2"
+
 "react-simple-typewriter@^3.0.1":
   "integrity" "sha512-z+aJugzvYPng9HoggyXNpnp7NjxtusGAb33bRaGRK2pEdirVKX4v3qrwdHqs6zdhCeLAthLGLtxgVX9oGekTLg=="
   "resolved" "https://registry.npmjs.org/react-simple-typewriter/-/react-simple-typewriter-3.0.1.tgz"
@@ -4906,7 +4919,7 @@
     "loose-envify" "^1.4.0"
     "prop-types" "^15.6.2"
 
-"react@*", "react@^15.3.0 || ^16.0.0 || ^17.0.0", "react@^16 || ^17 || ^18", "react@^16.3.0 || ^17.0.0-0", "react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17", "react@^17.0.2", "react@>= 0.14.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.6.0", "react@>=16.8", "react@>=16.8 || ^17.0.0", "react@>=16.8.0", "react@>=16.x", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.2", "react@17.x":
+"react@*", "react@^15.3.0 || ^16.0.0 || ^17.0.0", "react@^15.5.4 || ^16.0.0 || ^17.0.0", "react@^16 || ^17 || ^18", "react@^16.3.0 || ^17.0.0-0", "react@^16.6.0 || ^17", "react@^16.8.0 || ^17.0.0", "react@^16.9.0 || ^17", "react@^17.0.2", "react@>= 0.14.0", "react@>= 16", "react@>= 16.8.0 || 17.x.x || 18.x.x", "react@>=16.6.0", "react@>=16.8", "react@>=16.8 || ^17.0.0", "react@>=16.8.0", "react@>=16.x", "react@15.x.x || 16.x.x || 17.x.x", "react@17.0.2", "react@17.x":
   "integrity" "sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA=="
   "resolved" "https://registry.npmjs.org/react/-/react-17.0.2.tgz"
   "version" "17.0.2"

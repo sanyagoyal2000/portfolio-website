@@ -5,6 +5,8 @@ import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+
+
 function Footer() {
     return (
       
@@ -73,19 +75,19 @@ function Footer() {
             <span className="block uppercase text-pink-500 text-sm font-bold mb-2">Contents</span>
             <ul className="list-unstyled">
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer " >Home</a>
+                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer " href="/" >Home</Link>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >About</a>
+                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/about" >About</Link>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Resume</a>
+                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href='/resume' >Resume</Link>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Projects </a>
+                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/project" >Projects </Link>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer">Contact Me</a>
+                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/contact">Contact Me</Link>
               </li>
               
             </ul>
