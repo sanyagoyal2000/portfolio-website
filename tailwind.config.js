@@ -1,3 +1,6 @@
+const { grey } = require('@material-ui/core/colors')
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
@@ -8,6 +11,11 @@ module.exports = {
         'fira-sans': ['"Fira Sans"', 'sans-serif'],
         'inter':["Inter",'sans-serif'],
         'rubik':["Rubik",'sans-serif'],
+        'zen':["Zen Kurenaido",'sans-serif'],
+        'incon':['Inconsolata', 'monospace'],
+        'recur':["Recursive",'sans-serif'],
+        'pt':["PT Sans Narrow",'sans-serif'],
+        'lato':["Lato",'sans-serif'],
       },
       keyframes: {
         wave: {
@@ -20,6 +28,13 @@ module.exports = {
             '70%': { transform: 'rotate(0.0deg)' },
             '100%': { transform: 'rotate(0.0deg)' },
         }
+    },
+    colors: {
+      
+      cyan: colors.cyan,
+      indigo: colors.indigo,
+      teal:colors.teal,
+      blueGray:colors.blueGray,
     },
     animation: {
         wave: 'wave 1.5s infinite'

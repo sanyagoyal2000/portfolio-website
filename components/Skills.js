@@ -1,43 +1,38 @@
-import { useState } from "react";
-import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
-export default function Skills() {
-    return (
-        <AnimateSharedLayout>
-          <motion.ul layout initial={{ borderRadius: 25 }} className="flex flex-row bg-white p-[20px]">
-            {items.map(item => (
-              <Item key={item} />
-            ))}
-          </motion.ul>
-        </AnimateSharedLayout>
-      );
-    }
-    
-    function Item() {
-      const [isOpen, setIsOpen] = useState(false);
-    
-      const toggleOpen = () => setIsOpen(!isOpen);
-    
-      return (
-        <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
-          <motion.div className="avatar" layout />
-          <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
-        </motion.li>
-      );
-    }
-    
-    function Content() {
-      return (
-        <motion.div
-          layout
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-        >
-          <div className="row" />
-          <div className="row" />
-          <div className="row" />
-        </motion.div>
-      );
-    }
-    
-    const items = [0, 1, 2];
+import { motion } from "framer-motion";
+import Image from "next/image";
+import data from "../public/data.json";
+
+function Skills() {
+  return (
+    <div className="flex bg-gray-50  mt-2 p-2 rounded md:space-x-10 space-x-6 - ml-10 sm:-ml-0 flex-wrap justify-center md:items-start md:justify-start space-y-6 items-center">
+    {data.skills.map((skill, i) => (
+      <motion.a
+        key={i}
+        className={`${
+          i === 0 ? "ml-10 md:ml-0" : ""
+        } cursor-pointer relative w-20 h-20`}
+        href={skill.link}
+        target="_blank"
+        rel="noreferrer"
+        whileHover={{
+          scale: [1, 1.3, 1.15],
+          zIndex: 1,
+          transition: {
+            duration: 1,
+          },
+        }}
+      >
+        <Image
+          src={skill.src}
+          alt={skill.name}
+          layout="fill"
+          objectFit="contain"
+        />
+      </motion.a>
+    ))}
+  </div>
+
+  )
+}
+
+export default Skills

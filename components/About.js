@@ -48,7 +48,7 @@ function About() {
           </div>
           </div>
           </div>
-          <Achievement/>
+          
           
       </div>
     )
