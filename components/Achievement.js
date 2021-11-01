@@ -23,7 +23,7 @@ function Achievement() {
           <div className="p-1 space-y-2">
           <Link href={por.link1}>
             <Button
-            color="gray"
+            color="red"
             
             buttonType="outline"
             iconOnly={true}
