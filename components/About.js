@@ -1,5 +1,12 @@
+import Typewriter from 'typewriter-effect/dist/core';
+import Achievement from './Achievement.js';
+
+
+
 function About() {
     return (
+       <div>
+        
         <div className=" bg-gray-100 mx-auto  mt-2 mb-4 p-4">
             
         <div className="relative wrap overflow-hidden p-10 h-full">
@@ -40,8 +47,8 @@ function About() {
             </div>
           </div>
           </div>
-      
-          
+          </div>
+          <Achievement/>
           
       </div>
     )

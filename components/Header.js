@@ -2,6 +2,7 @@
 import Image from "next/image";
 
 import Link from 'next/link'
+//import { navLinks } from "../utils/data";
 
 import { Transition } from "@headlessui/react";
 import React, { useState,useEffect } from 'react';
@@ -42,6 +43,7 @@ function Header() {
                 <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/contact"><a>Contact</a></Link></li>
                 
               </ul>
+             
            
            </div>
            <div className="-mr-2 flex md:hidden items-end">

@@ -17,7 +17,7 @@ function Footer() {
         <h5 className="text-lg mt-0 mb-2 font-fira-sans text-blueGray-600">
           You can contact me through any of these platforms.
         </h5>
-        <div className=" flex flex-row mt-6 mr-2 py -4 lg:mb-0 mb-6">
+        <div className=" flex flex-row mt-6 mr-2 py -4 lg:mb-0 mb-6 space-x-2" >
           
        
             <Link href="https://www.facebook.com/sanya.goyal.560/">
@@ -28,7 +28,7 @@ function Footer() {
             iconOnly={true}
             rounded={true}
             ripple="dark"
-            className="border-0"
+            className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:shadow hover:gray-800"
             >
                 <FacebookIcon size="3xl" color="blue-500"/>
             </Button></Link>
@@ -39,7 +39,7 @@ function Footer() {
             iconOnly={true}
             rounded={true}
             ripple="dark"
-            className="border-0 ml-4"
+            className="grid place-items-center bg-white text-blue-400 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400"
             >
                 <TwitterIcon size="3xl" color="gray"/>
             </Button></Link>
@@ -50,7 +50,7 @@ function Footer() {
             iconOnly={true}
             rounded={true}
             ripple="dark"
-            className="border-0 ml-4 "
+            className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400 "
             >
                 <LinkedInIcon size="3xl" color="blue"/>
             </Button></Link>
@@ -61,7 +61,7 @@ function Footer() {
             iconOnly={true}
             rounded={true}
             ripple="dark"
-            className="border-0 ml-4"
+            className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400"
             >
                 <GitHubIcon size="3xl" color="gray"/>
             </Button></Link>
@@ -73,19 +73,19 @@ function Footer() {
             <span className="block uppercase text-pink-500 text-sm font-bold mb-2">Contents</span>
             <ul className="list-unstyled">
               <li>
-                <a className="text-gray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" >Home</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer " >Home</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" >About</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >About</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" >Resume</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Resume</a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" >Project </a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Projects </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">Contact Me</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer">Contact Me</a>
               </li>
               
             </ul>
