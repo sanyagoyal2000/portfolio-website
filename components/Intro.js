@@ -24,7 +24,7 @@ function Intro() {
                     
                     
                     <br></br>
-                <p>I am an Indian student in my junior year at Delhi Technological University.I am doing my BTech. in Computer Science Engineering.I am doing my minor in Data Analytics.I am proficient in C++ and C.Currently,I am exploring various front end frameworks and javascript based libraries like react.js,next.js,etc.</p>
+                <p>I am in my pre-final year BTech student at Delhi Technological University pursuing my major in Computer Science Engineering and minor in Data Analytics. I started with C and C++ and now I am continuing my journey exploring web development and machine learning. I believe there's a lot to learn, explore and certainly more problems to solve and a lot left to build. I have worked on various projects and done internships to get some perspective of what I would like to do after graduating. I have been a part of multiple communities of my college which have helped me develop teamwork skills and leadership skills along with my technical skills.</p>
 <ul>
 <li>Full Name: Sanya Goyal</li>
 
