@@ -120,7 +120,7 @@ export default function Home({projectData}) {
       className="text-3xl font-bold pb-5 font-pt pt-4 pl-4 text-gray-700  shadow:md shadow:gray-400">RESUME</motion.h2>
       <hr/>
       <br/>
-        <Resume className="p-4 items-center"/>
+        <Resume className="items-center"/>
 
       </section>
       <br/><br/>

@@ -75,19 +75,19 @@ function Footer() {
             <span className="block uppercase text-pink-500 text-sm font-bold mb-2">Contents</span>
             <ul className="list-unstyled">
               <li>
-                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer " href="/" >Home</Link>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer "  >Home</a>
               </li>
               <li>
-                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/about" >About</Link>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  >About</a>
               </li>
               <li>
-                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href='/resume' >Resume</Link>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Resume</a>
               </li>
               <li>
-                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/project" >Projects </Link>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  >Projects </a>
               </li>
               <li>
-                <Link className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" href="/contact">Contact Me</Link>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Contact Me</a>
               </li>
               
             </ul>
