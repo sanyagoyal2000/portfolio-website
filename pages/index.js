@@ -80,6 +80,7 @@ export default function Home({projectData}) {
       duration: 3,
       
     }}>
+      <br/><br/>
         <h2 
     className="text-3xl font-semibold pb-5 font-pt pt-4 pl-4 text-blueGray-700">Positions of Responsibility</h2>
       <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7 mt-6 ml-1 text-blueGray-700" viewBox="0 0 20 20" fill="currentColor">
