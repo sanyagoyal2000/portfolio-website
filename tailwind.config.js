@@ -35,6 +35,7 @@ module.exports = {
       indigo: colors.indigo,
       teal:colors.teal,
       blueGray:colors.blueGray,
+      orange:colors.orange,
     },
     animation: {
         wave: 'wave 1.5s infinite'

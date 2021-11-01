@@ -1,5 +1,20 @@
+import  { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
-function Contact() {
+export const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(process.env.YOUR_SERVICE_ID, process.env.YOUR_TEMPLATE_ID, e.target,  process.env.YOUR_USER_ID)
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   
     
     
