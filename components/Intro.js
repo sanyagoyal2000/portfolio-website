@@ -3,7 +3,7 @@ import { FaCircle } from 'react-icons/fa';
 
 function Intro() {
     return (
-             <div className=" mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
+             <div className=" mt-4 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3" id="about">
                  <div className="pt-4 bg-white  w-full items-center shadow px-6 py-4 flex flex-col">
 	<img src="https://raw.githubusercontent.com/sanyagoyal2000/portfolio-website/main/img/profile.jpeg" alt="img" title="img" className="rounded-full h-40 w-40 object-cover" />
 	<h4 className="mt-8 border-b-2 font-recur text-teal-600">SANYA GOYAL</h4>

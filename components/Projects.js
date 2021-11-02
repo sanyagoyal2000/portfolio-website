@@ -14,6 +14,9 @@ import { motion } from "framer-motion"
 }*/
 function Projects({img,title,text,link1,link2}) {
    return(
+     
+       
+        
     <motion.div animate={{ rotate:5}}
     transition={{
       repeat: 1,
@@ -36,13 +39,9 @@ function Projects({img,title,text,link1,link2}) {
         {text}
       </p>
     </div>
-    <div className="px-6 pt-4 pb-2">
-      {/*<span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-      <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-   */}
-      </div>
+    
   </motion.div>
+ 
    )
 }
 

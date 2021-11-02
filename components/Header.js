@@ -1,13 +1,28 @@
 
 import Image from "next/image";
-
-import Link from 'next/link'
-//import { navLinks } from "../utils/data";
-
+import {Link} from 'react-scroll'
 import { Transition } from "@headlessui/react";
 import React, { useState,useEffect } from 'react';
 
-
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -36,11 +51,26 @@ function Header() {
            <div className="hidden md:flex items-center justify-end space-x-4 text-gray-800 ">
            
               <ul className="flex text-white font-bold font-rubik uppercase space-x-6 ">
-                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/">Home</Link></li>
-                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/about">About</Link></li>
-                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/projects">Projects</Link></li>
-                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/resume">Resume</Link></li>
-                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link href="/contact">Contact</Link></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link to="home" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Home</Link></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link  to="about" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>About</Link></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link  to="projects" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Projects</Link></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link  to="resume" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Resume</Link></li>
+                <li className="mr-2 hover:text-yellow-200 cursor-pointer"><Link  to="contact" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Contact</Link></li>
                 
               </ul>
              
@@ -104,40 +134,53 @@ function Header() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-1 pb-2 space-y-1 sm:px-3">
-              <Link href="/projects">
+              
                 <a
                   
                   className="hover:bg-gray-700 text-white block px-2 py-1 rounded-md text-xs "
-                >
-                  Home
-                </a></Link>
+                ><Link  to="home" activeClass="active"  spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}>
+                  Home</Link>
+                </a>
 
                 <a
                   
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-2 py-1 rounded-md text-xs "
-                >
-                  About
+                ><Link  to="about" activeClass="active"  spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}>
+                  About</Link>
+                </a>
+
+                <a className="text-gray-300 hover:bg-gray-700 hover:text-white block px-2 py-1 rounded-md text-xs ">
+                    <Link  to="projects" activeClass="active"  spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}>
+                  Projects</Link>
                 </a>
 
                 <a
                  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-2 py-1 rounded-md text-xs "
-                >
-                  Projects
+                ><Link  to="resume" activeClass="active"  spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}>
+                  Resume</Link>
                 </a>
 
                 <a
                  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-2 py-1 rounded-md text-xs "
-                >
-                  Resume
-                </a>
-
-                <a
-                 
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-2 py-1 rounded-md text-xs "
-                >
-                  Contact
+                ><Link  to="contact" activeClass="active"  spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}>
+                  Contact</Link>
                 </a>
               </div>
             </div>

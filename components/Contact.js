@@ -19,7 +19,9 @@ export const Contact = () => {
     
     
     return (
-        <div className=" flex flex-row justify-items bg-gray-200 text-gray-100 px-8 py-12">
+      <div className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 " id="contact">
+        
+        <div className=" flex flex-row justify-items bg-gray-200 text-gray-100 px-8 py-12" >
         <div className="text-center w-full">
           <img src="https://raw.githubusercontent.com/sanyagoyal2000/Pictures/6931e3c979c02135fb08fd72e76bef5fa3d7fe3b/undraw_contact_us_15o2.svg" alt="contactUs"/>
 
@@ -67,7 +69,7 @@ export const Contact = () => {
               </div>
             
           </div>
-       
+          </div>
     )
 }
 

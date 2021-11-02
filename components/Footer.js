@@ -1,10 +1,10 @@
 
 import Button from "@material-tailwind/react/Button";
-import Link from 'next/link'
 import TwitterIcon from '@material-ui/icons/Twitter';
 import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import {Link} from 'react-scroll'
 
 
 function Footer() {
@@ -22,7 +22,7 @@ function Footer() {
         <div className=" flex flex-row mt-6 mr-2 py -4 lg:mb-0 mb-6 space-x-2" >
           
        
-            <Link href="https://www.facebook.com/sanya.goyal.560/">
+            <a href="https://www.facebook.com/sanya.goyal.560/">
             <Button
             color="gray"
             
@@ -33,8 +33,8 @@ function Footer() {
             className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:shadow hover:gray-800"
             >
                 <FacebookIcon size="3xl" color="blue-500"/>
-            </Button></Link>
-            <Link href="https://twitter.com/SanyaGoyal2000">
+            </Button></a>
+            <a href="https://twitter.com/SanyaGoyal2000">
             <Button
             color="blue"
             buttonType="outline"
@@ -44,8 +44,8 @@ function Footer() {
             className="grid place-items-center bg-white text-blue-400 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400"
             >
                 <TwitterIcon size="3xl" color="gray"/>
-            </Button></Link>
-            <Link href="https://www.linkedin.com/in/sanya-g-046ab811b/">
+            </Button></a>
+            <a href="https://www.linkedin.com/in/sanya-g-046ab811b/">
             <Button
             color="blue"
             buttonType="outline"
@@ -55,8 +55,8 @@ function Footer() {
             className="grid place-items-center bg-white text-blue-600 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400 "
             >
                 <LinkedInIcon size="3xl" color="blue"/>
-            </Button></Link>
-            <Link href="https://github.com/sanyagoyal2000">
+            </Button></a>
+            <a href="https://github.com/sanyagoyal2000">
             <Button
             color="blue"
             buttonType="outline"
@@ -66,7 +66,7 @@ function Footer() {
             className="grid place-items-center bg-white text-gray-900 shadow-md font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none hover:gray-400"
             >
                 <GitHubIcon size="3xl" color="gray"/>
-            </Button></Link>
+            </Button></a>
         </div>
       </div>
       <div className="w-full lg:w-6/12 px-4">
@@ -75,19 +75,34 @@ function Footer() {
             <span className="block uppercase text-pink-500 text-sm font-bold mb-2">Contents</span>
             <ul className="list-unstyled">
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer "  >Home</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer "  ><Link  to="home" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Home</Link></a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  >About</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  ><Link  to="about" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>About</Link></a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Resume</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" ><Link  to="resume" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Resume</Link></a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  >Projects </a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer"  ><Link  to="projects" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Projects</Link> </a>
               </li>
               <li>
-                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" >Contact Me</a>
+                <a className="text-gray-600 hover:text-gray-800 font-semibold block pb-2 text-sm cursor-pointer" ><Link  to="contact" activeClass="active"  spy={true}
+        smooth={true}
+        offset={-100}
+        duration={500}>Contact Me</Link></a>
               </li>
               
             </ul>
