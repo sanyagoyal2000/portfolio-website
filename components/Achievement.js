@@ -13,7 +13,7 @@ function Achievement() {
            <div className="container mt-4 mx-auto">
     <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
     {data.por.map((por, i) => (
-      <div className="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
+      <div className="dark:bg-white card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
         <div className="m-3">
           <h2 className="text-lg mb-2 text-lato text-center text-orange-400 ">{por.position}
 

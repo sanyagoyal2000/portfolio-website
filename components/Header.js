@@ -1,3 +1,5 @@
+import DarkModeToggle from "react-dark-mode-toggle";
+import useDarkMode from '../hooks/useDarkMode';
 
 import Image from "next/image";
 import {Link} from 'react-scroll'
@@ -25,8 +27,14 @@ const sidebar = {
 };
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [isDarkMode, setIsDarkMode] = useState( false);
   const [handleShow, setHandleShow] = useState(false);
+  const[colorTheme,setTheme]=useDarkMode();
+   
+  const toggleButton= () =>{
+    setTheme(colorTheme);
+    setIsDarkMode(isDarkMode);
+  }
 
   useEffect(() => {
     const listener = () => {
@@ -43,7 +51,7 @@ function Header() {
      }, []);
     return (
         
-      <header className={`fixed top-0 z-40 grid w-screen grid-cols-1  transition duration-100 ease-out p-5 ${handleShow ? "bg-gray-800 shadow-md" : ""} md:grid-cols-3  z-50 grid grid-flow-row grid-cols-2 p-5 md:px-10 sm:grid-cols-3 `}> 
+      <header className={`fixed top-0 z-40 grid w-screen grid-cols-1 dark: transition duration-100 ease-out p-5 ${handleShow ? " bg-gray-800  shadow-md" : ""} md:grid-cols-3  z-50 grid grid-flow-row grid-cols-2 p-3 md:px-10 sm:grid-cols-3 `}> 
            <div className="relative flex items-center h-10 cursor-pointer my-auto">
                <Image  src="https://raw.githubusercontent.com/sanyagoyal2000/Pictures/59a379a9cc89f2108bfaa6d5871a881b1dcc6a04/final%20(150%20x%2060%20px)%20(50%20x%2040%20px).svg" layout="fill" objectFit="contain" objectPosition="left"/>
            </div>
@@ -75,6 +83,21 @@ function Header() {
               </ul>
              
            
+           </div>
+           <div className="justify-self-end" onClick={toggleButton}>
+             {colorTheme==='light'?
+           <DarkModeToggle
+      
+           onChange={setIsDarkMode}
+      checked={!isDarkMode}
+      size={60}/>
+      :
+      <DarkModeToggle
+      onChange={setIsDarkMode}
+      
+      checked={isDarkMode}
+      size={60}
+    />}
            </div>
            <div className="-mr-2 flex md:hidden items-end">
               <button
@@ -119,6 +142,7 @@ function Header() {
                   </svg>
                 )}
               </button>
+           
             </div>
          
 
@@ -186,7 +210,7 @@ function Header() {
             </div>
           )}
         </Transition>
-
+       
         </header>
         
     )

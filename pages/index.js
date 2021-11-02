@@ -7,7 +7,6 @@ import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import { motion } from "framer-motion"
-import Intro from '../components/Intro.js';
 export default function Home({projectData}) {
   return (
     <div>
@@ -26,12 +25,13 @@ export default function Home({projectData}) {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"></link>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className="dark:bg-custom">
       <Header/>
       <Banner />
       <br/>
       <About/>
       <br/><br/><br/>
-      <div className="pt-6  max-w-7xl px-8 mx-auto sm:px-16 " id="projects">
+      <div className="pt-6  max-w-7xl px-8 mx-auto sm:px-16" id="projects">
       <motion.h2 
       animate={{ x: 100 }}
       transition={{
@@ -40,7 +40,7 @@ export default function Home({projectData}) {
       repeatType: "reverse",
         
       }}
-      className="text-3xl font-semibold pb-5 font-pt pt-4 pl-4 text-gray-800 md:text-center shadow:md shadow:gray-400">PROJECTS</motion.h2>
+      className="text-3xl font-semibold pb-5 font-pt pt-4 pl-4 dark:text-red-400 dark:font-bold text-gray-800 md:text-center shadow:md shadow:gray-400">PROJECTS</motion.h2>
         <hr/>
        
         <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
@@ -68,6 +68,7 @@ export default function Home({projectData}) {
       <Contact />
      
       <br/><br/>
+      </div>
       <Footer/>
 
       
