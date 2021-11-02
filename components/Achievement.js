@@ -17,7 +17,7 @@ function Achievement() {
         <div className="m-3">
           <h2 className="text-lg mb-2 text-lato text-center text-orange-400 ">{por.position}
 
-         <span className="text-sm text-teal-800 font-mono bg-teal-100 inline rounded-full px-2 align-top float-right animate-pulse">#{por.tag}</span></h2>
+         <span className="sm:text-xs text-sm text-teal-800 font-mono bg-teal-100 inline rounded-full px-2 align-top float-right animate-pulse">#{por.tag}</span></h2>
         <hr/>
         <div className="flex ">
           <div className="p-1 space-y-2">
