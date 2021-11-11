@@ -6,7 +6,7 @@ import os from '../img/portImages/os.png';
 import sort from '../img/portImages/sort.png';
 import prof from '../img/portImages/prof.png';
 import port from '../img/portImages/port.png';
-
+import ss1 from '../img/portImages/ss1.png'
 
 
 const portfolios = [
@@ -81,6 +81,15 @@ const portfolios = [
         link2: ' https://sanyagoyal2000.github.io/os-project/',
         title: 'Scheduling Algorithm visualizer',
         text: 'Created using HTML,CSS and Javascript.'
+    },
+    {
+        id: 9,
+        category:["Python"],
+        image: os,
+        link1: 'https://github.com/sanyagoyal2000/cmdb',
+        link2: ' https://cmdb-cloned-movie-database.herokuapp.com',
+        title: 'CMDB-Cloned Movie Database',
+        text: 'A content based movie recommendation application using TMDb api'
     }
 ]
 

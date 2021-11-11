@@ -7,7 +7,7 @@ import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
 import { motion } from "framer-motion"
-export default function Home({projectData}) {
+export default function Home() {
   return (
     <div>
       <Head>
@@ -46,9 +46,7 @@ export default function Home({projectData}) {
         <div className="p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-10">
         
         
-        {projectData?.map((item)=>(
-            <Projects  key={item.img} img={item.image} title={item.title} text={item.text} link1={item.link1} link2={item.link2}/>
-          ))}
+        <Projects/>
           </div>
           </div>
       <br/><br/><br/>
@@ -74,15 +72,4 @@ export default function Home({projectData}) {
       
     </div>
   )
-}
-export async function getStaticProps(){
-  
-  
-  const projectData=await fetch('https://jsonkeeper.com/b/U9LO').then((res)=>res.json());
-  return {
-    props: {
-      
-      projectData:projectData,
-    }
-  }
 }
