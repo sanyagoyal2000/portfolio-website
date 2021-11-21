@@ -6,8 +6,17 @@ import About from "../components/About";
 import Contact from "../components/Contact";
 import Projects from "../components/Projects";
 import Resume from "../components/Resume";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
+import Loader from "../components/Loader";
 export default function Home() {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
   return (
     <div>
       <Head>
@@ -25,6 +34,9 @@ export default function Home() {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet"></link>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {loading?
+        <Loader/>
+       :(<>
       <div className="dark:bg-custom">
       <Header/>
       <Banner />
@@ -68,7 +80,8 @@ export default function Home() {
       <br/><br/>
       </div>
       <Footer/>
-
+      </>
+      )}
       
     </div>
   )
